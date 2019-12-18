@@ -6,6 +6,11 @@ This repo contains a web app for classifying 3 types of local Singaporean Food u
 - Starlette
 
 ----------
+## Running on Google Cloud
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+
+----------
 ## Docker Installation
 
 You can test your changes locally by installing Docker and using the following command:
