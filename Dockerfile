@@ -7,12 +7,12 @@ COPY requirements.txt .
 
 RUN pip install packaging
 
-RUN pip install --upgrade -r requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY app app/
 
 RUN python app/server.py
 
-EXPOSE 8080
+ENV PORT 8080
 
 CMD ["python", "app/server.py", "serve"]
