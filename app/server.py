@@ -7,19 +7,19 @@ import sys
 from pathlib import Path
 from tensorflow.keras.models import load_model
 from ytb.tftools import *
-from io import BytesIO
 from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1j_IIIlNGsgbZKrbnBf3M1qfd9BEJHb40'
+# CONFIGURATIONS HERE
+export_file_url = 'https://storage.googleapis.com/tf2-workshop-fundamental-rig-253009/model2.h5'
 export_file_name = 'model2.h5'
-
 classes = ['mee_goreng', 'chicken_rice', 'roti_prata']
 valid_aug = [crop]
-path = Path(__file__).parent
 
+
+path = Path(__file__).parent
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
 app.mount('/static', StaticFiles(directory='app/static'))
