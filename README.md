@@ -6,17 +6,12 @@ This repo contains a web app for classifying 3 types of local Singaporean Food u
 - Starlette
 
 ----------
-## Running on Google Cloud
-
-[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/yoke2/food_classifier_tf2_cloud_run.git)
-
-----------
 ## Docker Installation
 
 You can test your changes locally by installing Docker and using the following command:
 
 ```
-docker build -t food-tf2 . && docker run --rm -it -p 5000:5000 food-tf2
+docker build -t food-tf2 . && docker run --rm -it -p 8080:8080 food-tf2
 ```
 
 ----------
@@ -24,6 +19,7 @@ docker build -t food-tf2 . && docker run --rm -it -p 5000:5000 food-tf2
 
 * Install dependencies
 ```
+$ pip install packaging
 $ pip install -r requirements.txt
 ```
 
