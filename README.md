@@ -2,8 +2,9 @@
 
 This repo contains a web app for classifying 3 types of local Singaporean Food using the following APIs and platforms
 
-- TensorFlow 2.0, using tf.image, tf.keras.models and tf.data (for training)
-- Starlette
+- TensorFlow 2: using tf.image, tf.keras.models and tf.data (for training)
+- Google Cloud Platform: Cloud Run, Cloud Build, Cloud Storage
+- Starlette, a lightweight ASGI framework/toolkit
 
 ----------
 ## Deploy with Google Cloud Run
@@ -52,6 +53,6 @@ $ python app/server.py serve
 ----------
 ## Reference
 
-* Based on [fast.ai's Guide for production deployment to Render](https://course.fast.ai/deployment_render.html)
+* Based on [fast.ai's guide for production deployment to Render](https://course.fast.ai/deployment_render.html)
 * [Google Cloud Run Docs](https://cloud.google.com/run/docs/)
 * Commonly used convenience functions can be referenced [here](https://github.com/yoke2/ytb)
