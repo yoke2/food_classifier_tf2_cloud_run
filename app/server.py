@@ -6,7 +6,7 @@ import tensorflow as tf
 import sys
 from pathlib import Path
 from tensorflow.keras.models import load_model
-from ytb.tftools import *
+from suptools.tftools import central_crop, process_img_bytes
 from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
@@ -16,7 +16,7 @@ from starlette.staticfiles import StaticFiles
 export_file_url = 'https://storage.googleapis.com/tf2-workshop-fundamental-rig-253009/model2.h5'
 export_file_name = 'model2.h5'
 classes = ['mee_goreng', 'chicken_rice', 'roti_prata']
-valid_aug = [crop]
+valid_aug = [central_crop]
 
 
 path = Path(__file__).parent
