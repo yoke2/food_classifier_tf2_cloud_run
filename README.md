@@ -55,4 +55,4 @@ $ python app/server.py serve
 
 * Based on [fast.ai's guide for production deployment to Render](https://course.fast.ai/deployment_render.html)
 * [Google Cloud Run Docs](https://cloud.google.com/run/docs/)
-* [Repository for upplementary package containing supporting functions](https://github.com/yoke2/suptools)
+* [Repository for supplementary package containing supporting functions](https://github.com/yoke2/suptools)
